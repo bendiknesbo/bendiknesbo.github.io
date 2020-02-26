@@ -10,6 +10,11 @@
         rel="noopener"
       >vue-cli documentation</a>.
     </p>
+    <h3>Test vue</h3>
+    <ul>
+      <li v-bind:key="m" v-for="m in temp1">{{ m }}</li>
+    </ul>
+    <button v-on:click="addToList" />
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -68,6 +73,18 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data() {
+    return {
+      temp1: ["a", "b", "c"],
+
+      temp2: []
+    };
+  },
+  methods: {
+    addToList() {
+      this.temp1.push("d");
+    }
   }
 };
 </script>
