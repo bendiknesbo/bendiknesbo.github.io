@@ -1,4 +1,4 @@
-upload:
-	gsutil -m rsync -x '\.git.*|.*\.DS_Store|.*Makefile' -r . gs://nesbo.eu
+serve:
+	serve --port 2525
 
-.PHONY: upload
+.PHONY: serve
