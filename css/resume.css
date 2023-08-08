@@ -229,3 +229,8 @@ ul.tech>li {
     font-size: .8rem;
     text-decoration-color: rgb(57, 115, 157)
 }
+
+#cert-badges img {
+    max-width: 200px;
+    max-height: 200px;
+}
