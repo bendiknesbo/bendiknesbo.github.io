@@ -1,0 +1,7 @@
+vendor
+node_modules
+**/*.min.css
+**/*.min.js
+**/*.min.html
+build
+coverage
